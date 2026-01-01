@@ -1,371 +1,189 @@
 <!DOCTYPE html>
-<html lang="en-us"><head>
-  <title>| Umair&#39;s Homepage</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta name="theme-color" content="" />
-<meta charset="utf-8" />
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<meta name="description" content="| Umair&#39;s Homepage" />
-<meta name="author" content="Umair Qudus" />
-<meta name="generator" content="aafu theme by Darshan in Hugo 0.69.0" />
+  <title>Umair Qudus | Researcher</title>
+  <meta name="description" content="Umair Qudus – PhD researcher at Paderborn University working on fact-checking, knowledge graphs, and fake news detection." />
+  <meta name="author" content="Umair Qudus" />
+  <meta name="theme-color" content="#252627" />
 
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627" />
+  <link rel="shortcut icon" href="/favicon.ico" />
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
-        <link rel="shortcut icon" href="/favicon.ico">
-        
+  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Roboto:wght@400;500&family=Roboto+Mono&display=swap" rel="stylesheet" />
 
-  <link
-    rel="stylesheet"
-    href="/css/bootstrap/bootstrap.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
-  />
+  <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css" />
+
   <link rel="stylesheet" href="/css/aafu_dark.css" />
   <link rel="stylesheet" href="/css/aafu.css" />
 
-  <script>
-    var themeColor = document.querySelector("meta[name=theme-color]");
-    window.onload = () => {
-      themeColor.content = getComputedStyle(document.body)["background-color"];
-      let defaultActivePanel = document.querySelector(".accordion.active");
-      if (defaultActivePanel) {
-        defaultActivePanel.nextElementSibling.style.maxHeight =
-          defaultActivePanel.nextElementSibling.scrollHeight + "px";
-      }
-    };
-    window.onresize = () => {
-      let defaultActivePanel = document.querySelector(".accordion.active");
-      if (defaultActivePanel) {
-        defaultActivePanel.nextElementSibling.style.maxHeight =
-          defaultActivePanel.nextElementSibling.scrollHeight + "px";
-      }
-    };
-  </script>
+  <!-- Accessibility & UX helpers -->
+  <style>
+    :focus-visible { outline: 3px solid #6ea8fe; outline-offset: 2px; }
+    .main-menu a { text-decoration: none; }
+    .accordion span { display: inline-flex; align-items: center; gap: .5rem; }
+    .social-icon { height: 45px; width: 45px; display: flex; align-items: center; justify-content: center; }
+  </style>
 </head>
+
 <body class="container">
-    <main style="min-height: calc(100vh - 60px);">
-      
-      <div class="d-flex flex-row row p-2">
-  <h3 class="main-menu mr-3">
-    <a href="https://www.umairq.github.io/">Home</a>
-  </h3>
-  
-  <h3 class="main-menu mr-3">
-    <a  target="_blank" href="https://test.com">Blog</a>
-  </h3>
-  <h3 class="main-menu mr-3">
-    <a  target="_blank" href="/papers/CV -- QUDUS-1.pdf">My CV</a>
-  </h3>
-</div>
+  <a class="sr-only sr-only-focusable" href="#main">Skip to content</a>
 
-      
-<div class="ml-auto mr-auto row row-eq-height rounded">
-  <div class="col-md-5 text-center p-2 mt-1">
-    <div class="profile-area rounded text-center position-relative shadow">
-      <div class="d-flex justify-content-center pt-2">
-  <div class="w-100 h-100">
-    <img
-      class="rounded rounded-circle mt-4"
-      src="/images/profile.jpg"
-      alt="Umair Qudus"
-      style="width: 95%; max-width: 300px;"
-    />
-  </div>
-</div>
+  <header class="py-3">
+    <nav class="d-flex flex-wrap align-items-center">
+      <h3 class="main-menu mr-3"><a href="/">Home</a></h3>
+      <h3 class="main-menu mr-3"><a href="https://test.com" target="_blank" rel="noopener">Blog</a></h3>
+      <h3 class="main-menu mr-3"><a href="/papers/CV--QUDUS-1.pdf" target="_blank" rel="noopener">CV</a></h3>
+    </nav>
+  </header>
 
-      <div class="p-2">
-        <h1 class="mb-0">Umair Qudus (Umair)</h1>
-<h2 class="mb-0">Researcher</h2>
-<h3 class="mb-0">Paderborn&#39;s University, Germany</h3>
-<div class="mt-2 d-flex flex-wrap justify-content-center">
-  
-  <div style="height:45px; width:45px;">
-    <a  target="_blank" href="https://www.linkedin.com/in/umair-qudus-3a857430/">
-      <i class="zoomlink mt-1 fab fa-linkedin-in"></i>
-    </a>
-  </div>
-  
-  <div style="height:45px; width:45px;">
-    <a  target="_blank" href="https://github.com/umairq/">
-      <i class="zoomlink mt-1 fab fa-github"></i>
-    </a>
-  </div>
-  
-  <div style="height:45px; width:45px;">
-    <a  target="_blank" href="https://twitter.com/uqudus">
-      <i class="zoomlink mt-1 fab fa-twitter"></i>
-    </a>
-  </div>
-  
-  <div style="height:45px; width:45px;">
-    <a  target="_blank" href="https://scholar.google.com/citations?user=itYQq5QAAAAJ">
-      <i class="zoomlink mt-1 ai ai-google-scholar"></i>
-    </a>
-  </div>
-  
-</div>
- <footer class=" mt-2 mb-2 ">
-  <span class="markdownify">Umair Qudus</span>
-  <span style="font-size:0px;">
-    &middot;
-    <i>
-      <a href="https://github.com/darshanbaral/aafu">
-        aafu
-      </a>
-    </i>
-    by
-    <a href="https://www.darshanbaral.com/">
-      darshan
-    </a>
-  </span>
-</footer>
+  <main id="main" style="min-height: calc(100vh - 80px);">
+    <section class="row row-eq-height rounded align-items-start">
+      <!-- Profile column -->
+      <aside class="col-md-5 text-center p-2 mt-1">
+        <div class="profile-area rounded position-relative shadow p-3">
+          <img
+            class="rounded-circle mt-3 img-fluid"
+            src="/images/profile.jpg"
+            alt="Portrait of Umair Qudus"
+            style="max-width: 300px;"
+            loading="lazy"
+          />
 
-      </div>
-    </div>
-  </div>
-  <div class="col-md-7 pt-2 mt-3">
-    
-    <h2 class="accordion  active ">
-      
-      <span onclick="expandAccordion(this)" style="cursor: pointer;">
-        <i class="fas fa-user"></i>
-        About Me</span>
-    </h2>
-    <div
-      class="panel overflow-hidden"
-      
-    >
-      <p class="markdownify">
-  I am currently serving as a doctrate candidate at the Data Science Research Group at Paderborn University, Germany.  
-Research Interest:
-I am mainly interested in:
+          <h1 class="mt-3 mb-0">Umair Qudus</h1>
+          <h2 class="h5 mb-0">PhD Researcher</h2>
+          <h3 class="h6 text-muted">Paderborn University, Germany</h3>
 
-    Fact-checking over knowledge graphs
-    Analyzing Linked Data—especially concerning its veracity
-    Fake news detection
-</p>
+          <div class="mt-3 d-flex flex-wrap justify-content-center" aria-label="Social links">
+            <a class="social-icon" href="https://www.linkedin.com/in/umair-qudus-3a857430/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="social-icon" href="https://github.com/umairq/" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a class="social-icon" href="https://twitter.com/uqudus" target="_blank" rel="noopener" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="social-icon" href="https://scholar.google.com/citations?user=itYQq5QAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </div>
 
-    </div>
-    
-    <h2 class="accordion ">
-      
-      <span onclick="expandAccordion(this)" style="cursor: pointer;">
-        <i class=""></i>
-        </span>
-    </h2>
-    <div
-      class="panel overflow-hidden"
-      
-    >
-      
+          <footer class="mt-3 small text-muted">
+            © <span id="year"></span> Umair Qudus
+          </footer>
+        </div>
+      </aside>
 
-    </div>
-    
-    <h2 class="accordion ">
-      
-      <span onclick="expandAccordion(this)" style="cursor: pointer;">
-        <i class="fas fa-graduation-cap"></i>
-        Education</span>
-    </h2>
-    <div
-      class="panel overflow-hidden"
-      
-    >
-      
-<dl>
-  <dt>Ph.D. in Computing Science (in progress)</dt>
-  <dd class="mb-0 ml-3">2020 - till date &middot; University of Paderborn, Germany</dd>
-  
-</dl>
+      <!-- Content column -->
+      <section class="col-md-7 pt-2 mt-3">
+        <!-- About -->
+        <h2 class="accordion active">
+          <span onclick="expandAccordion(this)">
+            <i class="fas fa-user"></i> About Me
+          </span>
+        </h2>
+        <div class="panel overflow-hidden">
+          <p>
+            I am a PhD candidate in the Data Science Research Group at Paderborn University, Germany.
+            My research focuses on fact-checking over knowledge graphs, veracity analysis of linked data,
+            and fake news detection.
+          </p>
+        </div>
 
-<dl>
-  <dt>Maters in Computer Science</dt>
-  <dd class="mb-0 ml-3">2015 - 2017 &middot; National University, Islamabad, Pakistan</dd>
-  
-</dl>
+        <!-- Education -->
+        <h2 class="accordion">
+          <span onclick="expandAccordion(this)">
+            <i class="fas fa-graduation-cap"></i> Education
+          </span>
+        </h2>
+        <div class="panel overflow-hidden">
+          <dl>
+            <dt>Ph.D. in Computing Science (in progress)</dt>
+            <dd class="ml-3">2020 – present · University of Paderborn, Germany</dd>
+          </dl>
+          <dl>
+            <dt>Master of Computer Science</dt>
+            <dd class="ml-3">2015 – 2017 · National University, Islamabad, Pakistan</dd>
+          </dl>
+          <dl>
+            <dt>B.S. in Computer Science</dt>
+            <dd class="ml-3">2009 – 2013 · National University, Islamabad, Pakistan</dd>
+          </dl>
+        </div>
 
-<dl>
-  <dt>B.S. in Computer Science</dt>
-  <dd class="mb-0 ml-3">2009 - 2013 &middot; National University, Islamabad, Pakistan</dd>
-  
-</dl>
+        <!-- Publications -->
+        <h2 class="accordion">
+          <span onclick="expandAccordion(this)">
+            <i class="fas fa-book"></i> Publications
+          </span>
+        </h2>
+        <div class="panel overflow-hidden">
+          <h4>Journal Articles</h4>
+          <p>
+            <strong>2025.</strong> Umair Qudus, Michael Röder, Muhammad Saleem, Axel‑Cyrille Ngonga Ngomo.
+            <a href="https://dl.acm.org/doi/10.1145/3749838" target="_blank" rel="noopener">
+              <em>Fact Checking Knowledge Graphs – A Survey.</em>
+            </a>
+            ACM Computing Surveys (CSUR).
+          </p>
+          <p>
+            <strong>2021.</strong> Umair Qudus et al.
+            <a href="http://www.semantic-web-journal.net/system/files/swj2604.pdf" target="_blank" rel="noopener">
+              <em>An empirical evaluation of cost‑based federated SPARQL query processing engines.</em>
+            </a>
+            Semantic Web Journal.
+          </p>
 
+          <h4 class="mt-3">Conference Proceedings</h4>
+          <p>
+            <strong>2024.</strong> Umair Qudus et al.
+            <a href="https://papers.dice-research.org/2024/CIKM_ExPrompt/public.pdf" target="_blank" rel="noopener">
+              <em>ExPrompt: Augmenting Prompts Using Examples as Modern Baseline for Stance Classification.</em>
+            </a>
+            CIKM 2024.
+          </p>
+          <p>
+            <strong>2024.</strong> Umair Qudus et al.
+            <a href="https://papers.dice-research.org/2024/EKAW_FaVeL/public.pdf" target="_blank" rel="noopener">
+              <em>FaVEL: Fact Validation Ensemble Learning.</em>
+            </a>
+            EKAW 2024.
+          </p>
+          <p>
+            <strong>2023.</strong> Umair Qudus et al.
+            <a href="https://papers.dice-research.org/2023/ISWC_TemporalFC/public.pdf" target="_blank" rel="noopener">
+              <em>TEMPORALFC: A Temporal Fact‑Checking Approach over Knowledge Graphs.</em>
+            </a>
+            ISWC 2023.
+          </p>
+          <p>
+            <strong>2022.</strong> Umair Qudus et al.
+            <a href="https://papers.dice-research.org/2022/ISWC_HybridFC/public.pdf" target="_blank" rel="noopener">
+              <em>HybridFC: A Hybrid Fact‑Checking Approach for Knowledge Graphs.</em>
+            </a>
+            ISWC 2022.
+          </p>
+        </div>
+      </section>
+    </section>
+  </main>
 
-    </div>
-    
-    <h2 class="accordion ">
-      
-      <span onclick="expandAccordion(this)" style="cursor: pointer;">
-        <i class="fas fa-book"></i>
-        Publications</span>
-    </h2>
-    <div
-      class="panel overflow-hidden"
-      
-    >
-      
-
-
-<h4 style="text-decoration: underline;">Journal Articles</h4>
-
-<p>2025.
-Umair Qudus, Michael Röder, Muhammad Saleem, Axel-Cyrille Ngonga Ngomo
-
-<a href="https://dl.acm.org/doi/10.1145/3749838">
-  <em>Fact Checking Knowledge Graphs - A Survey.</em>
-</a>
-ACM Computing Survey. CSUR
-</p>
-      
-<p>2021.
-Umair Qudus, Muhammad Saleem, Axel-Cyrille Ngonga Ngomo, Young-koo Lee.
-
-<a href="http://www.semantic-web-journal.net/system/files/swj2604.pdf">
-  <em>An empirical evaluation of cost-based federated SPARQL query processing engines.</em>
-</a>
-  Sementic Web Journal
-</p>
-      
-
-
-<h4 style="text-decoration: underline;">Proceedings</h4>
-
-<p>2024.
-Umair Qudus, Michael Röder, Daniel Vollmers, Axel-Cyrille Ngonga Ngomo.
-
-
-<a href="https://papers.dice-research.org/2024/CIKM_ExPrompt/public.pdf">
-  <em>ExPrompt: Augmenting Prompts Using Examples as Modern Baseline for Stance Classification.</em>
-</a>
-
-
-Conference on Information and Knowledge Management -- CIKM 2024, 2024.
-</p>
-      
-<p>2024.
-Umair Qudus, Franck Lionel Tatkeu Pekarou, Ana Alexandra Morim da Silv, Michael Röder, Axel-Cyrille Ngonga Ngomo.
-
-
-<a href="https://papers.dice-research.org/2024/EKAW_FaVeL/public.pdf">
-  <em>FaVEL: Fact Validation Ensemble Learning.</em>
-</a>
-
-
-International Conference on Knowledge Engineering and Knowledge Management -- EKAW 2024.
-</p>
-
-<p>2023.
-Umair Qudus, Michael Röder, Sabrina Kirrane, Axel-Cyrille Ngonga Ngomo.
-
-
-<a href="https://papers.dice-research.org/2023/ISWC_TemporalFC/public.pdf">
-  <em>TEMPORALFC: A Temporal Fact Checking approach over Knowledge Graphs</em>
-</a>
-
-
-The Semantic Web -- ISWC 2023.
-</p>
-
-
-
-<p>2022.
-Umair Qudus, Michael Röder, Muhammad Saleem, Axel-Cyrille Ngonga Ngomo.
-
-
-<a href="https://papers.dice-research.org/2022/ISWC_HybridFC/public.pdf">
-  <em>HybridFC: A Hybrid Fact-Checking Approach for Knowledge Graphs</em>
-</a>
-
-
-The Semantic Web -- ISWC 2022.
-</p>
-
-
-
-
-    </div>
-    
-    <h2 class="accordion ">
-      
-      <span onclick="expandAccordion(this)" style="cursor: pointer;">
-        <i class=""></i>
-        </span>
-    </h2>
-    <div
-      class="panel overflow-hidden"
-      
-    >
-      <dl>
-  
-</dl>
-
-    </div>
-    
-    <h2 class="accordion ">
-      
-      <span onclick="expandAccordion(this)" style="cursor: pointer;">
-        <i class=""></i>
-        </span>
-    </h2>
-    <div
-      class="panel overflow-hidden"
-      
-    >
-      <script>
-  let skillPanel = document.querySelector("#skill-panel")
-    .previousElementSibling;
-  skillPanel.addEventListener("click", function() {
-    let skillBars = document.querySelectorAll("#skill-percent");
-    skillBars.forEach(elem => {
-      elem.style.width = elem.classList[0];
-    });
-  });
-</script>
-
-
-    </div>
-    
-    <h2 class="accordion ">
-      
-      <span onclick="expandAccordion(this)" style="cursor: pointer;">
-        <i class=""></i>
-        </span>
-    </h2>
-    <div
-      class="panel overflow-hidden"
-      
-    >
-      <ul class="pl-0">
-  
-</ul>
-
-    </div>
-    
-    <script src="/js/accordion.js"></script>
-  </div>
-</div>
-
-    </main>
-    
-  </body>
+  <script src="/js/accordion.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
-
-
-
-
